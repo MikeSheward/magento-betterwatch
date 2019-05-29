@@ -14,7 +14,8 @@ module.exports = {
     "options": {
       "proxy": process.env.BW_PROXY
     },
-};```
+};
+```
 
 #### /dev/tools/grunt/configs/concurrent.js
 ```'use strict';
@@ -24,7 +25,8 @@ module.exports = {
     options: {
         logConcurrentOutput: true
     }
-};```
+};
+```
 
 Create the following Grunt task file inside your Magento project.
 #### /dev/tools/grunt/tasks/betterwatch.js
