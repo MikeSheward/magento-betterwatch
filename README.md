@@ -7,7 +7,8 @@ You can get using this with just a few minor steps...
 
 Create the following Grunt config files inside your Magento project.
 #### /dev/tools/grunt/configs/browserSync.js
-```'use strict';
+```
+'use strict';
 
 module.exports = {
     "files": [ "pub/static/frontend/**/*.css", "pub/static/frontend/**/*.js" ],
@@ -18,7 +19,8 @@ module.exports = {
 ```
 
 #### /dev/tools/grunt/configs/concurrent.js
-```'use strict';
+```
+'use strict';
 
 module.exports = {
     frontend: ['browserSync', 'watch'],
@@ -30,7 +32,8 @@ module.exports = {
 
 Create the following Grunt task file inside your Magento project.
 #### /dev/tools/grunt/tasks/betterwatch.js
-```module.exports = function (grunt) {
+```
+module.exports = function (grunt) {
     'use strict';
 
     grunt.registerTask('betterwatch', function() {
@@ -47,7 +50,8 @@ Create the following Grunt task file inside your Magento project.
 Add the following snippets to your package.json file inside your Magento project. Be sure to add both "grunt-browser-sync" and "grunt-concurrent" dependencies to the devDependencies inside your package.json file. Also add the below scripts section to file also. 
 ###### Note: Be sure to replace "magentoproject.local" inside the betterwatch script in your package.json file to the domain that you are using for your magento project.
 #### /package.json
-```{
+```
+{
     ...
     "devDependencies": {
         ...
