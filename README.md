@@ -64,6 +64,12 @@ Add the following snippets to your package.json file inside your Magento project
 }
 ```
 
+## Usage
+Run it using
+```
+npm run betterwatch
+```
+
 ## Tada
 Thats it! It will run the magento 2 default watcher and the BrowserSync watcher simultaniously, allowing you to edit your Magento 2 theme Less files and allow the changes to be displayed live in the browser, automatically injected with zero hassle. It will still output your usual Magento Less watcher errors in the console alongside any browsersync running errors.
 
